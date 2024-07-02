@@ -18,6 +18,12 @@ def read_dict():
     dbconn.close()
     return rows
 
+'''
+def add_word():
+    dbconn = db_connection()
+    cur = dbconn.cursor()
+    cur.execute(f'INSERT INTO dictionary (english_word, local_translation) VALUES ({}), ({});')
+'''
 
 while True: ## REPL - Read Execute Program Loop
     cmd = input("Command: ")
